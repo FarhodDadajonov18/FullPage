@@ -1,0 +1,554 @@
+* {
+  box-sizing:border-box;
+  font-family: 'Paytone One','Livvic' sans-serif;
+   }
+  
+   body {
+   margin:0;
+   font-style:normal;
+   font-weight:normal;
+   color: #000;
+   }
+  
+   .container {
+    max-width: 1158px;
+    width: 100%;
+    padding: 0px 24px;
+    margin: 0px auto;
+   }
+   
+   .visually-hidden {
+   position:absolute;
+   width:1px;
+   height:1px;
+   margin:-1px;
+   padding:0;
+   overflow:hidden;
+   border:0;
+   clip: rect(0 0 0 0);
+   }
+  
+   .header {
+    background-color:#014E56;
+   }
+  
+   .header__head{
+    padding: 73px 0px;
+   }
+  
+   .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+  
+   .header__logo:hover{
+    opacity: 0.8;
+    transition: 0.2s ease;
+   }
+  
+   .header__logo:active {
+    opacity: 0.6;
+   }
+  
+   .header__nav {
+    margin-right: auto;
+   }
+  
+   .header__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 30px;
+   }
+  
+   .header__li {
+     margin: 0 20px;
+     position: relative;
+   }
+   
+   .header__li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color:#fff;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s ease;
+   }
+  
+   .header__li:hover::after {
+    width: 100%;
+   } 
+  
+  
+  
+   .header__li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+   }
+  
+   .header__li a:hover {
+    color: #efd5db;
+    transition: 0.4s ease;
+   }
+  
+   .header__li a:active {
+    opacity: 0.5;
+   }
+  
+   .header__link {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding:10px 32px;
+    border-radius: 25px;
+   }
+  
+   .header__link:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+    color: black;
+    transition: 0.5s ease;
+   }
+   .header__link:active{
+    opacity: 0.5;
+   }
+  
+   .header__btn {
+    display: none;
+   }
+  
+  
+  @media  only screen and (max-width:600px){
+    .header__list {
+      display: none;
+    }
+    .header__link {
+      display: none;
+    }
+  
+    .header__btn {
+      display: block;
+      background: transparent;
+      border: none;
+      color: #fff;
+    }
+    
+  }
+  
+
+
+  .contact{
+    background-color: #014E56;
+  background-image: url(../img/bottom2.png), url(../img/blue.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -100px 70px, 108% 100%;
+   }
+
+   @media  only screen and (max-width:1000px){
+    .contact{
+      background-position: -100px 70px, 108% 114%;
+    }
+   }
+   @media  only screen and (max-width:600px) {
+  .contact{
+    background-image: none;
+  }
+   } 
+
+
+  
+.contact__title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px ;
+}
+
+
+
+ .contact__header{
+  margin-bottom: 80px;
+
+ }
+
+.contact__header h2{
+  font-family: 'Livvic';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 100px;
+color: #fff;
+}
+.contact__param{
+  font-family: 'Livvic';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+color: #F67E7E;
+}
+.contact__ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+ flex-direction: column;
+ max-width: 540px;
+
+}
+
+.contact__ul li{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.contact__ul li img{
+  margin-right: 10px;
+}
+.contact__ul li span{
+  font-family: 'Livvic';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 28px;
+color: #FFFFFF;
+}
+
+.communication{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 150px;
+}
+.communication__input{
+ width:540px;
+
+  padding: 20px ;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #79C8C7;
+  color: #fff;
+  font-weight: 700;
+}
+::placeholder{
+  color:#79C8C7;
+  opacity: 0.4;
+  font-weight:400;
+}
+.communication__area{
+  margin-top: 15px;
+  width: 540px;
+  resize: none;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #79C8C7;
+  color: #fff;
+  height: 70px;
+}
+.communication__area::placeholder{
+  margin-left: 50px;
+
+}
+.communication__btn{
+  margin-right: auto;
+  margin-top: 24px;
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: 1px solid white;
+  outline: none;
+  font-weight: bold;
+}
+.communication__btn:hover{
+background: transparent;
+color: #fff;
+transition: 0.5s ease;
+
+}
+
+footer{
+  background-color: #002529;
+  position: relative;
+}
+.footer__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+.footer-link a{
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+.footer-ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.footer-ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Livvic';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+display: block;
+padding-top: 20px;
+}
+.address{
+color: #fff;
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 30px;
+}
+.address p{
+  margin: 0;
+}
+
+
+
+
+.social-net ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 100px;
+margin-bottom: 30px;
+
+
+
+}
+.social-net ul li{
+  padding: 0 10px;
+}
+.final{
+font-family: 'Livvic';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 25px;
+color: #fff;
+}
+
+
+
+@media only screen and (max-width: 1160px) {
+  
+.contact__title{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.contact__header h2,p{
+ text-align: center;
+}
+}
+  
+@media only screen and (max-width: 800px){
+  .communication{
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .social-net ul{
+    position: absolute;
+    left: -50px;
+    bottom:0px;
+  }
+  .address{
+    position: absolute;
+    right: 20px;
+    text-align: right;
+  
+  }
+  
+  .final{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 600px){
+  .communication__btn{
+    padding: 15px 35px;
+    font-size: 15px;
+  }
+  .communication__input{
+    max-width: 450px;
+  }
+  .communication__area{
+    max-width: 450px;
+  }
+  nav{
+    display: none;
+  }
+  .header__link{
+    display: none;
+  }
+.header__btn{
+  display: inline-block;
+  background-color: #fff;
+  background: transparent;
+}
+}
+
+@media only screen and (max-width: 600px){
+  .footer__header{
+    display: flex;
+    flex-direction: column;
+    
+  }
+footer{
+  padding-top: 130px;
+  padding-bottom: 140px;
+}
+
+  .address{
+    position: absolute;
+    top: 300px;
+    left: 0;
+    margin-bottom: 40px;
+  }
+  .social-net ul {
+    position: absolute;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+    left: 70px;
+  }
+  .final{
+    position: absolute;
+       left: 30px;
+  }
+
+  .communication__input{
+    max-width: 370px;
+  }
+  .communication__area{
+    max-width: 370px;
+}
+.social-net ul{
+  left: 30px;
+}
+.social-net ul{
+  left: 117px;
+}
+}
+@media only screen and (max-width: 455px){
+  .communication__input{
+    max-width: 340px;
+  }
+  .communication__area{
+    max-width: 340px;
+}
+
+
+.social-net ul{
+  left: 51px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 370px){
+  .social-net ul{
+    left: 0px;
+  }
+  .communication__input{
+    max-width: 278px;
+  }
+  .communication__area{
+    max-width: 278px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 330px){
+
+  .contact-header h2{
+   font-size: 50px;
+  }
+
+
+  .contact-header p{
+    font-size: 28px;
+   }
+   .contact__ul li span{
+    font-size: 17px;
+   }
+  .communication__input{
+    max-width: 264px;
+  }
+  .communication__area{
+    max-width: 262px;
+}
+.social-net ul{
+  left:-10px;
+}
+.footer{
+  padding-bottom: 30px;
+}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 300px){
+  .communication__input{
+    max-width: 225px;
+  }
+  .communication__area{
+    max-width: 225px;
+}
+.social-net ul{
+  left: -34px;
+}
+
+}
+
+@media only screen and (max-width: 270px){
+  .communication__btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+  
+  
+  
